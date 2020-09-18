@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcogollo95/Backend.git"
+  },
+  "author": "Jose Cogollo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcogollo95/Backend/issues"
+  },
+  "homepage": "https://github.com/jcogollo95/Backend#readme"
+}
