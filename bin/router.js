@@ -8,11 +8,11 @@ app.get("/", function (req, res){
 
 app.get("/users", function (req, res) {
     let users = [
-        {nickname: "josecogollo", password: "12345"},
-        {nickname: "Alixbaron", password: "12345678"},
-        {nickname: "GreyNovoa", password: "1234567890"},
-        {nickname: "PaulaRambao", password: "12345"},
-        {nickname: "SebastianPaternina", password: "12345"}
+        {nickname: "jose cogollo", password: "12345"},
+        {nickname: "Alix baron", password: "12345678"},
+        {nickname: "Grey Novoa", password: "1234567890"},
+        {nickname: "Paula Rambao", password: "12345"},
+        {nickname: "Sebastian Paternina", password: "12345"}
         
     ];
     res.status(200).send(users);
