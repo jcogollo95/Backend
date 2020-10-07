@@ -30,5 +30,18 @@ app.get("/songs", function (req, res) {
     
 });
 
+app.get("/song/:id", function (req, res) {
+    let { id } = req.params;
+    let song;
+    if(id==="hdh76hy6h44r4"){
+        song = {id: "hdh76hy6h44r4", nombre: "la risa de las vocales", duracion: "4:20", id_autor: "cgcb87uy6f"}
+    }else{
+        song ={id: "hdh76hy6h44r4", nombre: "la cancion de los colores", duracion: "3:10", id_autor: "cgcb87uy6f"}
+
+ 
+    }
+    res.status(200).send(song);
+    
+});
 
 exports.app = app;
