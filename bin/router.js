@@ -2,9 +2,13 @@ const express = require("express");
 const app = express();
 
 app.get("/", function (req, res){ 
-    res.status(200).send("hola mundo");
+    res.status(200).send("Bienvenida");
 
 });
+/**
+ * @api {get} /Bienvenida
+ * @apiBienvenida
+ */
 
 app.get("/users", function (req, res) {
     let users = [
@@ -12,7 +16,7 @@ app.get("/users", function (req, res) {
         {nickname: "Alix baron", password: "12345678"},
         {nickname: "Grey Novoa", password: "1234567890"},
         {nickname: "Paula Rambao", password: "12345"},
-        {nickname: "Sebastian Paternina", password: "12345"}
+        {nickname: "Sebastian materninez", password: "12345"}
         
     ];
     res.status(200).send(users);
