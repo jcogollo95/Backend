@@ -34,6 +34,19 @@ app.get("/users", function (req, res) {
     
 });
 
+/**
+ * @api {get} /songs
+ * @apiName songs
+ * @apiGroup grupo
+ * @apiDescription Permite mostrar los grupos delas colecciones de musica de la API
+ * @apiSuccess {string} Colecciones de canciones de la API
+ * @apiSuccessExample {json} Success-Example
+ * HTTP/1.1 200 OK
+ * {
+ * users: songs
+ * }
+ */
+
 app.get("/songs", function (req, res) {
     let songs = [
         {id: "hdh76hy6h44r4", nombre: "la risa de las vocales", duracion: "4:20", id_autor: "cgcb87uy6f"}, 
