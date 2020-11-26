@@ -2,14 +2,25 @@ const express = require("express");
 const app = express();
 
 app.get("/", function (req, res){ 
-    res.status(200).send("Bienvenida");
+    res.status(200).send("hola mundo");
 
 });
-/**
- * @api {get} /Bienvenida
- * @apiBienvenida
- */
 
+/**
+ * @api {get} /users 
+ * @apiName users
+ * @apiGroup General
+ * @apiDescription Permite mostrar los usuarios de la API
+ * 
+ * @apiSuccess {string} users usuarios en linea de la API
+ * @apiSuccessExample {json} Success-Example
+ * HTTP/1.1 200 OK
+ * {
+ * users: Usuarios
+ * }
+
+
+ */
 app.get("/users", function (req, res) {
     let users = [
         {nickname: "jose cogollo", password: "12345"},
